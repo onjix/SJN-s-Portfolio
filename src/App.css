@@ -1,5 +1,4 @@
-/************ Default Css ************/
-* {
+*********** Default Css *********** * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,46 +11,41 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
-
-body {
-  font-weight: 400;
-  overflow-x: hidden;
-  position: relative;
-  background-color: #121212 !important;
-  color: #fff !important;
-  font-family: "Centra", sans-serif !important;
+/* *********** NavB Css ************/
+*/ .NavB-Nav {
+  background-color: tomato;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-  line-height: normal;
+.NavB-Container {
 }
-
-p,
-a,
-li,
-button,
-ul {
-  margin: 0;
-  padding: 0;
-  line-height: normal;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
+/************ AboutMe Css ************/
 .AMLayout {
   background-color: tomato;
+}
+
+/************ ABOUTME Css ************/
+.Aboutme-Container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Add some spacing between grid items */
+}
+
+.Aboutme-Item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Aboutme-Item img {
+  max-width: 50px; /* Adjust the max width for the icon images */
+}
+
+.Aboutme-Name,
+.Aboutme-Birthday,
+.Aboutme-Address,
+.Aboutme-GitHub {
+  grid-column: span 1; /* Each item spans one column */
 }
