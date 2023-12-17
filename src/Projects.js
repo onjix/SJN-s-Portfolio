@@ -1,7 +1,9 @@
 export const Projects = () => {
   return (
     <>
-      <div>projects</div>
+      <div className="Projects-Container" id="Projects">
+        projects
+      </div>
     </>
   );
 };
