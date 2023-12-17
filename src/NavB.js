@@ -1,19 +1,26 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, Nav, Container } from "react-bootstrap";
 import { Title } from "./Title";
+import { Introduce } from "./Introduce";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+
 export const NavB = () => {
   return (
-    <>
-      <Navbar className="NavB-Nav">
-        <Container className="NavB-Container">
-          <Navbar.Brand href="#home">SJN's Portfolio</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#ABOUTME">ABOUT ME</Nav.Link>
-            <Nav.Link href="#SKILLS">SKILLS</Nav.Link>
-            <Nav.Link href="#PROJECTS">PROJECTS</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-    </>
+    <Router>
+      <div className="HeaderContainer">
+        <Link to="#Home" className="HeaderTitle">
+          SJN's Portfolio
+        </Link>
+        <div className="HeaderNavMenus">
+          <Link to="#AboutMe" className="HeaderNavMenu">
+            About me
+          </Link>
+          <Link to="#Skills" className="HeaderNavMenu">
+            Skills
+          </Link>
+          <Link to="#Projects" className="HeaderNavMenu">
+            Projects
+          </Link>
+        </div>
+      </div>
+    </Router>
   );
 };

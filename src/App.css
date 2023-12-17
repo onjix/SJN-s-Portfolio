@@ -1,7 +1,9 @@
-*********** Default Css *********** * {
+/* *********** Default Css ***********  */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 25px;
 }
 .head-title {
   color: #fff;
@@ -12,40 +14,129 @@ html {
   scroll-padding-top: 75px;
 }
 /* *********** NavB Css ************/
-*/ .NavB-Nav {
-  background-color: tomato;
-}
-.NavB-Container {
-}
-/************ AboutMe Css ************/
-.AMLayout {
-  background-color: tomato;
+.HeaderContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  max-width: 71.25rem;
+  height: 4.5rem;
+  padding: 1.25rem 2rem;
+  margin: 0 auto;
 }
 
-/************ ABOUTME Css ************/
+.HeaderTitle {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+  color: black; /* Change text color to black */
+}
+
+.HeaderNavMenus {
+  float: right;
+}
+
+.HeaderNavMenu {
+  display: inline-block;
+  padding: 0 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2rem;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+  color: black; /* Change text color to black */
+}
+
+/************ Introduce Css ************/
+.Intro-container {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+.Intro-container p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/************ Aboutme Css ************/
 .Aboutme-Container {
+  position: relative;
+  padding: 4rem 2rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 20px; /* Add some spacing between grid items */
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Aboutme-Title {
+  font-family: "Black Han Sans", sans-serif;
+  padding: 30px 0;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  border-bottom: 1px solid #7f7f7f; /* Dark border bottom */
 }
 
 .Aboutme-Item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.Aboutme-Item img {
-  max-width: 50px; /* Adjust the max width for the icon images */
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 columns */
+  gap: 10px; /* Adjust the gap between items */
 }
 
 .Aboutme-Name,
 .Aboutme-Birthday,
 .Aboutme-Address,
 .Aboutme-GitHub {
-  grid-column: span 1; /* Each item spans one column */
+  grid-column: span 1;
+  display: flex;
+  font-size: 1.2rem; /* Adjust font size as needed */
+  margin-bottom: 20px;
+}
+.AboutmeWrapper {
+  padding-left: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: 100%;
+  max-width: 14rem;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+.icon {
+  margin-right: 20px; /* Adjust margin as needed */
+  align-self: center; /* Vertically center the icon */
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: left;
+  font-weight: bold;
+}
+
+.titleInfo {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.Aboutme-GitHub a {
+  color: #007bff; /* GitHub link color */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.Aboutme-GitHub a:hover {
+  color: #0056b3; /* GitHub link color on hover */
 }
