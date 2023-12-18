@@ -27,6 +27,9 @@ html {
   height: 4.5rem;
   padding: 1.25rem 2rem;
   margin: 0 auto;
+  display: flex; /* Flex container */
+  justify-content: space-between; /* Items are evenly distributed in the line */
+  align-items: center;
 }
 
 .HeaderTitle {
@@ -40,7 +43,7 @@ html {
 }
 
 .HeaderNavMenus {
-  float: right;
+  display: flex;
 }
 
 .HeaderNavMenu {
@@ -52,6 +55,16 @@ html {
   cursor: pointer;
   text-decoration: none; /* Remove underline */
   color: black; /* Change text color to black */
+}
+.HeaderNavMenus li {
+  list-style-type: none; /* Remove default list style */
+  margin-left: 10px; /* Adjust the space between navigation items */
+}
+
+/* Additional style to align Skills, Projects, and Contact to the right */
+.HeaderNavMenus {
+  display: flex; /* Flex container for the navigation menus */
+  justify-content: right;
 }
 
 /************ Introduce Css ************/
@@ -68,7 +81,7 @@ html {
 /************ Aboutme Css ************/
 .Aboutme-Container {
   position: relative;
-  padding: 4rem 2rem;
+  padding-top: 4rem;
   display: grid;
   display: block;
   width: 90%;
@@ -76,12 +89,14 @@ html {
 }
 
 .Aboutme-Title {
+  margin-top: 20px;
   font-family: "Black Han Sans", sans-serif;
-  padding: 30px 0;
   font-weight: bold;
   font-size: 2.5rem;
   text-align: center;
   border-bottom: 1px solid #7f7f7f; /* Dark border bottom */
+  width: 30%;
+  margin: 0 auto;
 }
 
 .Aboutme-Item {
@@ -98,7 +113,6 @@ html {
   grid-column: span 1;
   display: flex;
   font-size: 1.2rem; /* Adjust font size as needed */
-  margin-bottom: 20px;
 }
 .AboutmeWrapper {
   padding-left: 40px;
@@ -139,4 +153,85 @@ html {
 
 .Aboutme-GitHub a:hover {
   color: #0056b3; /* GitHub link color on hover */
+}
+
+/************ Skills Css ************/
+.Skills-Container {
+  position: relative;
+  display: grid;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+.Skills-Title {
+  width: 20%;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  border-bottom: 1px solid #7f7f7f; /* Dark border bottom */
+  margin-bottom: 30px;
+  margin: 0 auto;
+}
+.SkillsContents {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* 조절 가능한 갭 값 */
+}
+
+.SkillsContent {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  flex-shrink: 0;
+  width: 80%; /* 수정된 너비 값 */
+  padding: 1.5rem;
+  margin: 0 auto 2rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.2);
+  -webkit-box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.2);
+}
+
+.SkillsName {
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #c7b9b9;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #aa3af4;
+  text-align: center;
+}
+
+.SkillsImg {
+  display: block;
+  width: 100%;
+  height: 100%; /* 이미지 높이를 100%로 조절하여 부모 요소에 맞춤 */
+  overflow: hidden; /* 이미지가 부모 요소를 벗어나는 경우 자르기 */
+}
+
+.SkillsImg img {
+  display: block;
+  object-fit: cover; /* 이미지의 비율을 유지한 채 부모 요소에 맞춤 */
+  margin: 0 auto;
+}
+
+/************ Projects Css ************/
+.Projects-Title {
+  margin-top: 20px;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  border-bottom: 1px solid #7f7f7f; /* Dark border bottom */
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.ProjectsContents {
+  width: 80%; /* 수정된 너비 값 */
+  padding: 1.5rem;
+  margin: 0 auto 2rem;
+  border-radius: 1rem;
+  background-color: #ccc;
 }

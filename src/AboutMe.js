@@ -79,7 +79,6 @@ export const AboutMe = () => {
           </div>
         </div>
       </div>
-      <br />
     </>
   );
 };
