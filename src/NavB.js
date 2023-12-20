@@ -1,9 +1,8 @@
 import { Introduce } from "./Introduce";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
 export const NavB = () => {
   return (
-    <Router>
+    <>
       <div className="HeaderContainer">
         <a href="#Home" className="HeaderTitle">
           SJN's Portfolio
@@ -20,7 +19,7 @@ export const NavB = () => {
           </a>
         </div>
       </div>
-    </Router>
+      <Introduce />
+    </>
   );
 };
-//'이미지: flaticon.com'.

@@ -15,21 +15,10 @@ html {
 }
 /* *********** NavB Css ************/
 .HeaderContainer {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 10;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   width: 100%;
   max-width: 71.25rem;
-  height: 4.5rem;
   padding: 1.25rem 2rem;
-  margin: 0 auto;
-  display: flex; /* Flex container */
-  justify-content: space-between; /* Items are evenly distributed in the line */
-  align-items: center;
+  background-color: #a593e0;
 }
 
 .HeaderTitle {
@@ -69,6 +58,7 @@ html {
 
 /************ Introduce Css ************/
 .Intro-container {
+  background-color: #a593e0;
   display: block;
   position: relative;
   text-align: center;
@@ -84,8 +74,9 @@ html {
   padding-top: 4rem;
   display: grid;
   display: block;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  background-color: #e0e3da;
 }
 
 .Aboutme-Title {
@@ -160,8 +151,10 @@ html {
   position: relative;
   display: grid;
   display: block;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  padding-top: 20px;
+  background-color: #fffff3;
 }
 .Skills-Title {
   width: 20%;
@@ -169,69 +162,56 @@ html {
   font-weight: bold;
   font-size: 2.5rem;
   text-align: center;
-  border-bottom: 1px solid #7f7f7f; /* Dark border bottom */
+  border-bottom: 1px solid #000000; /* Dark border bottom */
   margin-bottom: 30px;
   margin: 0 auto;
 }
 .SkillsContents {
-  margin-top: 50px;
+  margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px; /* 조절 가능한 갭 값 */
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .SkillsContent {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  flex-shrink: 0;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   width: 80%; /* 수정된 너비 값 */
-  padding: 1.5rem;
   margin: 0 auto 2rem;
-  border-radius: 1rem;
-  background-color: #fff;
-  box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.2);
-  -webkit-box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.2);
 }
 
 .SkillsName {
   padding-bottom: 0.5rem;
+  padding-right: 30px;
   margin-bottom: 1.5rem;
-  border-bottom: 1px solid #c7b9b9;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #aa3af4;
-  text-align: center;
-}
-
-.SkillsImg {
-  display: block;
-  width: 100%;
-  height: 100%; /* 이미지 높이를 100%로 조절하여 부모 요소에 맞춤 */
-  overflow: hidden; /* 이미지가 부모 요소를 벗어나는 경우 자르기 */
-}
-
-.SkillsImg img {
-  display: block;
-  object-fit: cover; /* 이미지의 비율을 유지한 채 부모 요소에 맞춤 */
+  color: #0b1b77;
   margin: 0 auto;
 }
-
+.SkillsInfo ul li {
+}
 /************ Projects Css ************/
+.Projects-Container {
+  padding-top: 20px;
+  background-color: #566270;
+}
 .Projects-Title {
   margin-top: 20px;
   font-family: "Black Han Sans", sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
   text-align: center;
-  border-bottom: 1px solid #7f7f7f; /* Dark border bottom */
+  border-bottom: 1px solid #ffffff; /* Dark border bottom */
   width: 30%;
   margin: 0 auto;
   margin-bottom: 30px;
+  color: #fff;
 }
 .ProjectsContents {
-  margin-top: 50px;
+  padding-top: 30px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px; /* 조절 가능한 갭 값 */
 }
 
@@ -242,10 +222,10 @@ html {
   width: 80%; /* 수정된 너비 값 */
   padding: 1.5rem;
   margin: 0 auto 2rem;
-  border-radius: 1rem;
   background-color: #fff;
   box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.2);
   -webkit-box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.2);
+  border-radius: 0.5rem;
 }
 
 .ProjectsName {
@@ -261,7 +241,11 @@ html {
   font-size: 0.8rem;
   color: #59465a;
 }
-
+.ProjectsBox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
 .ProjectsImg {
   display: block;
   background-size: cover;
@@ -272,4 +256,7 @@ html {
   height: auto; /* 이미지의 가로 세로 비율을 유지하면서 크기 조정 */
   display: block; /* 이미지 사이의 여백 제거 */
   margin: 0 auto; /* 가로 중앙 정렬 */
+}
+.ProjectsDe div {
+  font-size: 20px;
 }

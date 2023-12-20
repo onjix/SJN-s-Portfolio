@@ -10,38 +10,49 @@ export const Skills = () => {
         <div className="SkillsContents">
           <div className="SkillsContent">
             <div className="SkillsName">frontend</div>
-            <div className="SkillsImg">
-              <img src={Frontend} alt="Frontend" />
+            <div className="SkillsInfo">
+              <ul>
+                <li>HTML/CSS/JS</li>
+                <li>React</li>
+                <li>PHP</li>
+                <li>Three.js</li>
+              </ul>
             </div>
           </div>
           <div className="SkillsContent">
             <div className="SkillsName">Backend</div>
-            <div className="SkillsImg">
-              <img src={Backend} alt="Backend" />
+            <div className="SkillsInfo">
+              <ul>
+                <li>Java</li>
+                <li>SpringBoot</li>
+                <li>MySQL</li>
+                <li>H2</li>
+              </ul>
             </div>
           </div>
           <div className="SkillsContent">
-            <div className="SkillsName">Version Control</div>
-            <div className="SkillsImg">
-              <img src={VC} alt="Version Control" />
-            </div>
-          </div>
-          <div className="SkillsContent">
-            <div className="SkillsName">Communication</div>
-            <div className="SkillsImg">
-              <img src={Communication} alt="Communication" />
-            </div>
-          </div>
-          <div className="SkillsContent">
-            <div className="SkillsName">Deployment</div>
-            <div className="SkillsImg">
-              <img src={""} alt="Deployment" />
+            <div className="SkillsName">Tool</div>
+            <div className="SkillsInfo">
+              <ul>
+                <li>Github</li>
+                <li>Notion</li>
+                <li>Figma</li>
+                <li>VSCode</li>
+                <li>IntelliJ</li>
+                <li>Postman</li>
+              </ul>
             </div>
           </div>
           <div className="SkillsContent">
             <div className="SkillsName">Certificate</div>
-            <div className="SkillsImg">
-              <img src={""} alt="Certificate" />
+            <div className="SkillsInfo">
+              <ul>
+                <li>정보처리기사</li>
+                <li>SQLD</li>
+                <li>AI-900</li>
+                <li>Toeic 805</li>
+                <li>운전면허 1종 보통</li>
+              </ul>
             </div>
           </div>
         </div>
