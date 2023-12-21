@@ -1,7 +1,7 @@
-import DTT from "./asset/DTT.png";
-import SoM from "./asset/SoM.png";
-import Img from "./asset/Img.png";
-import TE from "./asset/TE.png";
+import DTT from "./assets/DTT.png";
+import SoM from "./assets/SoM.png";
+import Img from "./assets/Img.png";
+import TE from "./assets/TE.png";
 export const Projects = () => {
   return (
     <>

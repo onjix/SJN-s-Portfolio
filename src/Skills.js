@@ -1,7 +1,3 @@
-import Frontend from "./asset/Frontend.png";
-import Backend from "./asset/Backend.png";
-import VC from "./asset/Github.png";
-import Communication from "./asset/Figma.png";
 export const Skills = () => {
   return (
     <>

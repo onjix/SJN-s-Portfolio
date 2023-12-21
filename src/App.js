@@ -9,6 +9,7 @@ const App = () => {
   return (
     <>
       <NavB />
+      <Introduce />
       <AboutMe />
       <Skills />
       <Projects />
