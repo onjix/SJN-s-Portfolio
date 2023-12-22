@@ -71,7 +71,8 @@ html {
 /************ Introduce Css ************/
 .Intro-Container {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding-top: 200px;
+  padding-bottom: 250px;
   background-image: url("./assets/bg.png");
   background-position: top center;
   background-size: cover;
@@ -81,10 +82,11 @@ html {
   text-align: center;
 }
 .Intro-Container hr {
-  width: 15%;
-  font-weight: 600;
-  margin: 0 auto;
-  border-color: #0b1b77;
+  width: 10rem;
+  margin: 1rem auto;
+  border: none;
+  border-top: 0.2rem solid bisque;
+  opacity: 1;
 }
 
 .IntroName {
@@ -99,15 +101,15 @@ html {
   width: 10rem;
   margin: 0 auto;
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 0.8rem 2rem;
   border: none;
   border-radius: 1.5rem;
-  background-color: #0b1b77;
+  background-color: bisque;
   cursor: pointer;
 }
 .IntroBtn a {
   text-decoration: none;
-  color: #fff;
+  color: black;
   font-weight: 500;
   font-size: 1.2rem;
 }
@@ -216,10 +218,11 @@ html {
 }
 
 .SkillsContent {
+  display: flex;
   padding-top: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 80%; /* 수정된 너비 값 */
+  width: 100%; /* 수정된 너비 값 */
   margin: 0 auto 2rem;
 }
 
@@ -232,7 +235,16 @@ html {
   color: #0b1b77;
   margin: 0 auto;
 }
-.SkillsInfo ul li {
+.SkillsInfos {
+  width: 100%;
+}
+.SkillsInfo {
+  display: flex;
+  width: 100%;
+}
+.SkillsInfoText {
+  width: 250px;
+  margin-right: 10px;
 }
 /************ Projects Css ************/
 .Projects-Container {
@@ -245,7 +257,7 @@ html {
   font-weight: bold;
   font-size: 2.5rem;
   text-align: center;
-  border-bottom: 1px solid #ffffff; /* Dark border bottom */
+  border-bottom: 1px solid #ffffff;
   width: 30%;
   margin: 0 auto;
   margin-bottom: 30px;

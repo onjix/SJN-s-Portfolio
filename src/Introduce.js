@@ -26,7 +26,6 @@ export const Introduce = () => {
       <div className="Intro-Container" id="Home">
         <p className="IntroName">- 손지노 -</p>
         <p className="IntroName">포트폴리오</p>
-        <br />
         <hr />
         <br />
         <br />
@@ -34,7 +33,7 @@ export const Introduce = () => {
           안녕하세요. 풀스택 개발자를 목표로 하는 주니어 개발자입니다.
         </p>
         <p className="IntroDe">
-          현재 갖고 있는 문제를 분석하고 창의적인 해결책을 도출하고 제시하는
+          현재 문제점을 분석하여 해결책을 제시하거나 새로운 아이디어를 도출하는
           작업을 좋아합니다.
         </p>
         <br />
