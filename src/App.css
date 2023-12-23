@@ -1,4 +1,11 @@
 /* *********** Default Css ***********  */
+@font-face {
+  font-family: "JalnanGothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -43,6 +50,7 @@ html {
   cursor: pointer;
   text-decoration: none;
   color: #000000;
+  font-family: JalnanGothic;
 }
 .HeaderContainer.scrolled {
   padding: 0;
@@ -85,17 +93,19 @@ html {
   width: 10rem;
   margin: 1rem auto;
   border: none;
-  border-top: 0.2rem solid bisque;
+  border-top: 0.2rem solid rgb(201, 122, 247);
   opacity: 1;
 }
 
 .IntroName {
   font-size: 60px;
   color: #fff;
+  font-family: "JalnanGothic";
 }
 .IntroDe {
   font-size: 30px;
   color: hsla(0, 0%, 100%, 0.75);
+  font-family: "JalnanGothic";
 }
 .IntroBtn {
   width: 10rem;
@@ -104,7 +114,7 @@ html {
   padding: 0.8rem 2rem;
   border: none;
   border-radius: 1.5rem;
-  background-color: bisque;
+  background-color: rgb(201, 122, 247);
   cursor: pointer;
 }
 .IntroBtn a {
@@ -133,6 +143,7 @@ html {
   border-bottom: 1px solid #7f7f7f; /* Dark border bottom */
   width: 30%;
   margin: 0 auto;
+  font-family: "JalnanGothic";
 }
 
 .Aboutme-Item {
@@ -210,6 +221,7 @@ html {
   border-bottom: 1px solid #000000; /* Dark border bottom */
   margin-bottom: 30px;
   margin: 0 auto;
+  font-family: "JalnanGothic";
 }
 .SkillsContents {
   margin-top: 30px;
@@ -262,6 +274,7 @@ html {
   margin: 0 auto;
   margin-bottom: 30px;
   color: #fff;
+  font-family: "JalnanGothic";
 }
 .ProjectsContents {
   padding-top: 30px;

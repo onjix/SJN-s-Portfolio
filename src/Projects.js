@@ -2,12 +2,43 @@ import DTT from "./assets/DTT.png";
 import SoM from "./assets/SoM.png";
 import Img from "./assets/Img.png";
 import TE from "./assets/TE.png";
+import Port from "./assets/Portfolio.png";
 export const Projects = () => {
   return (
     <>
       <div className="Projects-Container" id="Projects">
         <div className="Projects-Title">Projects</div>
         <div className="ProjectsContents">
+          <div className="ProjectsContent">
+            <br />
+            <div className="ProjectsName">
+              SJN's Portfolio
+              <div className="ProjectsName2">2023년도 및 1인 프로젝트</div>
+            </div>
+            <div className="ProjectsBox">
+              <div className="ProjectsImg">
+                <img src={Port} alt="Portfolio" />
+              </div>
+              <div className="ProjectsDe">
+                <div>&nbsp;포트폴리오 용도로 제작한 웹사이트입니다.</div>
+                <div>
+                  &nbsp;React로 포트폴리오를 만들면서 웹페이지 제작에 부족한
+                  부분이 무엇인지 알게 되었습니다. 특히 웹페이지의 디자인적인
+                  부분이 부족하였고 웹페이지 제작을 하면서 디자인과 색상조합
+                  등을 공부하였습니다.
+                </div>
+                <br />
+                <div>
+                  &nbsp;✔️ &nbsp;주요기능:자기소개, 인적사항, 기술, 프로젝트
+                </div>
+                <div>
+                  &nbsp;✔️
+                  &nbsp;Github:https://github.com/onjix/SJN-s-Portfolio.git
+                </div>
+                <div>&nbsp;✔️ &nbsp;사용기술: React, Netlify</div>
+              </div>
+            </div>
+          </div>
           <div className="ProjectsContent">
             <div className="ProjectsName">
               디지털 트윈 기술을 활용한 식당 예약 시스템
