@@ -1,4 +1,4 @@
-# Son JI NO Portfolio
+# SJN's Portfolio
 ![main](https://github.com/onjix/SJN-s-Portfolio/assets/101625609/6acd666a-542c-4306-806e-349565768896)
 
 ## 📆 개발 기간
